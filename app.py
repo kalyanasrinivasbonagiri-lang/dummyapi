@@ -18,6 +18,13 @@ STUDENTS = [
         "contact_number": "7989559217",
         "total_dues": 135000,
     },
+      {
+            "student_name": "yukash",
+            "parent_name": "Devaraaja.",
+            "contact_number": "7989559217",
+            "total_dues": 135000,
+        }
+
 ]
 
 
