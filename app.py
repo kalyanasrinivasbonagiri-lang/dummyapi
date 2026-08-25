@@ -32,7 +32,7 @@ ATTENDANCE_RECORDS = [
         "school_name": "Dummy School",
         "student_name": "pranav",
         "date": "2026-08-25",
-        "date_of_birth": "2008-04-12",
+        "date_of_birth": "2008-25-08",
         "phone_number": "9686692994",
         "parent_name": "Devaraaja.",
         "ATTENDANCE_STATUS":"A"
@@ -41,7 +41,7 @@ ATTENDANCE_RECORDS = [
         "school_name": "Dummy School",
         "student_name": "nivas",
         "date": "2026-08-25",
-        "date_of_birth": "2008-09-03",
+        "date_of_birth": "2008-25-08",
         "phone_number": "7989559217",
         "parent_name": "Devaraaja.",
         "ATTENDANCE_STATUS":"A"
