@@ -35,6 +35,7 @@ ATTENDANCE_RECORDS = [
         "date_of_birth": "2008-04-12",
         "phone_number": "9686692994",
         "parent_name": "Devaraaja.",
+        "ATTENDANCE_STATUS":"A"
     },
     {
         "school_name": "Dummy School",
@@ -43,14 +44,16 @@ ATTENDANCE_RECORDS = [
         "date_of_birth": "2008-09-03",
         "phone_number": "7989559217",
         "parent_name": "Devaraaja.",
+        "ATTENDANCE_STATUS":"A"
     },
     {
         "school_name": "Dummy School",
         "student_name": "yukash",
         "date": "2026-08-25",
         "date_of_birth": "2009-01-27",
-        "phone_number": "7989559217",
+        "phone_number": "7708866836",
         "parent_name": "Devaraaja.",
+        "ATTENDANCE_STATUS":"A"
     },
 ]
 
