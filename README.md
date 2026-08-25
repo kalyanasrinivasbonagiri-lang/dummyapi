@@ -1,6 +1,6 @@
 # Dummy Company API
 
-This service mimics the company student API and returns fixed dummy data.
+This service mimics the company student and attendance APIs and returns fixed dummy data.
 
 ## Local run
 
@@ -14,6 +14,7 @@ python app.py
 ```text
 http://127.0.0.1:8000/api/students?school_id=6
 http://127.0.0.1:8000/api/students/6
+http://127.0.0.1:8000/api/attendance?school_id=6
 ```
 
 ## Response shape
@@ -21,7 +22,7 @@ http://127.0.0.1:8000/api/students/6
 ```json
 {
   "status": true,
-  "count": 2,
+  "count": 3,
   "school_id": "6",
   "data": [
     {
@@ -39,6 +40,15 @@ http://127.0.0.1:8000/api/students/6
   ]
 }
 ```
+
+## Attendance and birthday data
+
+```text
+http://127.0.0.1:8000/api/attendance?school_id=6
+```
+
+The response includes `school_name`, `student_name`, `date`, `date_of_birth`,
+`phone_number`, and `parent_name` for the same students.
 
 ## Hosting
 

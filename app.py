@@ -27,6 +27,33 @@ STUDENTS = [
 
 ]
 
+ATTENDANCE_RECORDS = [
+    {
+        "school_name": "Dummy School",
+        "student_name": "pranav",
+        "date": "2026-08-25",
+        "date_of_birth": "2008-04-12",
+        "phone_number": "9686692994",
+        "parent_name": "Devaraaja.",
+    },
+    {
+        "school_name": "Dummy School",
+        "student_name": "nivas",
+        "date": "2026-08-25",
+        "date_of_birth": "2008-09-03",
+        "phone_number": "7989559217",
+        "parent_name": "Devaraaja.",
+    },
+    {
+        "school_name": "Dummy School",
+        "student_name": "yukash",
+        "date": "2026-08-25",
+        "date_of_birth": "2009-01-27",
+        "phone_number": "7989559217",
+        "parent_name": "Devaraaja.",
+    },
+]
+
 
 def create_app() -> Flask:
     app = Flask(__name__)
@@ -74,6 +101,21 @@ def create_app() -> Flask:
                 "count": len(STUDENTS),
                 "school_id": school_id,
                 "data": STUDENTS,
+            }
+        )
+
+    @app.route("/api/attendance", methods=["GET", "OPTIONS"])
+    def get_attendance():
+        if request.method == "OPTIONS":
+            return ("", 204)
+
+        school_id = (request.args.get("school_id") or "").strip()
+        return jsonify(
+            {
+                "status": True,
+                "count": len(ATTENDANCE_RECORDS),
+                "school_id": school_id,
+                "data": ATTENDANCE_RECORDS,
             }
         )
 
